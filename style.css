@@ -1,0 +1,101 @@
+* 
+{
+    box-sizing: border-box; /* este es para que los elementos no crescan y respeten su ancho*/
+}
+
+body 
+{
+    font-family: "Roboto"; /* es para nombrar la tipogrrafia de letras de googlefont */
+    font-size: 13px;
+}
+
+a
+{
+    display: inline-block; /*cambiar el comportamiento de los elementos*/
+}
+
+header 
+{
+    padding: 15px 0; /*el espacio hacia dentro de los elementos*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /*necesario para que el background este 100% en los botones de inicio*/
+    z-index: 2;
+    background-color: white;
+}
+
+header .container 
+{
+    display: flex;
+    justify-content: space-between; /*eje x*/
+    align-items: center; /*eje y*/ 
+}
+
+header .container .logo 
+{
+    width: 100px; /*pixeles*/
+}
+
+header .container a 
+{
+    color: red;
+    text-decoration: none;
+    margin: 0 15px; /* espacios hacias afuerra */ 
+}
+
+.boton 
+{
+    text-align: center;
+    text-decoration: none; /*quitarle la linea a los botones*/
+    padding: 15px 20px;
+}
+
+.boton.boton-rojo
+{
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container 
+{
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#Inicio 
+{
+    position: relative; /*la posicion relativa es un espacio que puede ser movido, pero se mantiene.*/
+}
+
+#Inicio img 
+{
+    width: 100%;
+    display: block;
+}
+
+#Inicio .bloque-inicio 
+{
+    position: absolute; /*absoluto es un espacio que deja de mantenerrse y puede ser colocado ejem dentro de una imagen*/
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    text-align: center; /*centrar los textos*/ 
+    margin-left: -200px; /*solo el margin trabaja con negativos*/
+}
+
+#Inicio .bloque-inicio h1 
+{
+    color: white;
+    font-size: 35px;
+}
+
+#Inicio .bloque-inicio p 
+{
+    color: white;
+    font-size: 15px;
+}
